@@ -6,7 +6,7 @@ A simple web app to help keep track of movies you've watched or want to watch. A
 
 ### Tech & API
 
-I will be using JavaScript, React, and Node for this project. The API will be using is the [OMDB](https://www.omdbapi.com/) API.
+I will be using Next.js and MongoDB for this project. The API will be using is the [OMDB](https://www.omdbapi.com/) API.
 
 ### Schema
 
