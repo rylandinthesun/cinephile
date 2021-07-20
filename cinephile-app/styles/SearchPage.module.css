@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+.searchContainer {
+	padding: 0 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 25px;
+	overflow-y: auto;
+	height: 65vh;
+}
+
+.searchContainer::-webkit-scrollbar {
+	display: none;
+}
+
+.moreBtnContainer {
+	display: flex;
+	justify-content: center;
+	left: 50%;
+	right: 50%;
+	position: fixed;
+}
+
+.searchForm {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 18vh;
+}

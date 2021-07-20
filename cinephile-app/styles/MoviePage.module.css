@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+.container {
+	padding: 0 2rem;
+}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 16vh;
+	font-size: 1.9rem;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+	color: #0f4c75;
+	text-align: center;
+}
+
+.btnContainer {
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.search {
+	color: #3282b8;
+	transition: 0.2s;
+}
+
+.dashboard {
+	color: #3282b8;
+	transition: 0.2s;
+}
+
+.search svg {
+	padding-top: 5px;
+}
+
+.dashboard svg {
+	padding-top: 5px;
+}
+
+.search:hover {
+	color: #0f4c75;
+}
+
+.dashboard:hover {
+	color: #0f4c75;
+}
+
+.cardContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}

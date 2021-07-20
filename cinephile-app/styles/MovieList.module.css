@@ -1,0 +1,10 @@
+.scrollWrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	padding: 20px 12px;
+	margin-left: 15px;
+	scroll-behavior: smooth;
+}

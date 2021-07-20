@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+.container {
+	min-height: 100vh;
+	padding: 0 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.movieContainer {
+	padding: 0 2rem;
+}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 16vh;
+}
+
+.heading div {
+	font-size: 1.9rem;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+	color: #0f4c75;
+}
+
+.heading a {
+	color: #3282b8;
+	font-family: 'Rubik', sans-serif;
+	transition: 0.2s;
+	margin-bottom: 15px;
+	font-size: 0.9rem;
+}
+
+.heading a:hover {
+	color: #0f4c75;
+}
+
+.heading a svg {
+	padding-top: 5px;
+}
+
+.noResultsContainer {
+	min-height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60vh;
+	font-family: 'Rubik', sans-serif;
+	font-size: 0.8rem;
+}
+
+.noResultsContainer a {
+	color: #3282b8;
+	padding: 0 4px;
+	transition: 0.3s;
+}
+
+.noResultsContainer a:hover {
+	color: #0f4c75;
+}

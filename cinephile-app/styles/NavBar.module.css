@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+.nav {
+	background-color: #3282b8;
+	padding: 6px;
+	padding-left: 10px;
+	height: 60px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #1b262c;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+	position: fixed;
+}
+
+.nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	padding: 0px 5px;
+}
+
+.menuBtn {
+	font-size: 1.8rem;
+	color: #1b262c;
+}
+
+.searchBtn {
+	font-size: 1.4rem;
+	display: grid;
+	place-items: center;
+	padding-right: 4px;
+	color: #1b262c;
+	transition: 0.3s;
+}
+
+.searchBtn:hover {
+	color: #bbe1fa;
+}
+
+.menuItems {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	border-radius: 5px;
+	position: absolute;
+	font-family: 'Rubik', sans-serif;
+	top: 56px;
+	height: 150px;
+	margin-right: 10px;
+	padding: 10px 30px 10px 10px;
+	border: 2px solid #0f4c75;
+	right: 0;
+	background-color: #3282b8;
+	z-index: 99;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	opacity: 1;
+	transition: 0.3s;
+}
+
+.logo a svg {
+	background-color: #1b262c;
+	padding: 5px 4px;
+	font-size: 2rem;
+	border-radius: 4px;
+	color: #3282b8;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+	transition: all 0.3s;
+}
+
+.logo a svg:hover {
+	background-color: #0f4c75;
+	color: #bbe1fa;
+}
+
+.signOutBtn {
+	border: 0;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	color: #1b262c;
+	transition: color 0.3s;
+	cursor: pointer;
+}
+
+.signOutBtn svg {
+	margin-right: 10px;
+}
+
+.signOutBtn:hover {
+	color: #bbe1fa;
+}
+
+.navBtn a {
+	font-size: 1.2rem;
+	color: #1b262c;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s;
+	margin-left: 5px;
+}
+
+.navBtn svg {
+	margin-right: 10px;
+}
+
+.navBtn a:hover {
+	color: #bbe1fa;
+}

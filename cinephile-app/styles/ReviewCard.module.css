@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+.movieCard {
+	background-color: #3282b8;
+	width: 100%;
+	border-radius: 5px;
+	border: 3px solid #0f4c75;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 10px;
+	color: ##3282b8;
+	transition: all 0.2s;
+	cursor: pointer;
+	margin: 5px 5px;
+}
+
+.movieCard:hover {
+	background-color: #0f4c75;
+	border-color: #1b262c;
+}
+
+.movieCard img {
+	height: 6rem;
+	width: 4rem;
+	object-fit: cover;
+}
+
+.imgTitle {
+	display: flex;
+	height: 6rem;
+	width: 95%;
+}
+
+.imgTitle div {
+	padding-left: 10px;
+}
+
+.imgTitle div h3 {
+	margin: 0;
+	font-family: 'Rubik', sans-serif;
+	color: #bbe1fa;
+	font-size: 1.1rem;
+	width: 80%;
+}
+
+.imgTitle div p {
+	margin: 0;
+	padding-top: 5px;
+	font-size: 0.8rem;
+	width: 100%;
+	font-family: 'Rubik', sans-serif;
+	color: #1b262c;
+}
+
+.rating {
+	display: flex;
+}
+
+.rating div {
+	color: #bbe1fa;
+	font-size: 0.7rem;
+}

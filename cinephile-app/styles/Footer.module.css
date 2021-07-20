@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #0f4c75;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.6rem;
+	font-family: 'Rubik', sans-serif;
+	color: #bbe1fa;
+}

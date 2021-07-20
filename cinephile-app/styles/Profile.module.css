@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 16vh;
+}
+
+.heading div {
+	font-size: 1.9rem;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+	color: #0f4c75;
+	text-align: center;
+}
+
+.container {
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 15px 0;
+}
+
+.userInfo {
+	font-size: 1.2rem;
+	padding: 16px 16px;
+	border-radius: 5px;
+	background-color: #3282b8;
+	border: 3px solid #0f4c75;
+	box-shadow: #bbe1fa -10px 10px 0px -3px, #0f4c75 -10px 10px;
+}
+
+.userInfo div {
+	padding: 10px 0;
+	color: #bbe1fa;
+}
+
+.userInfo div span {
+	font-family: 'Playfair Display', serif;
+	font-weight: 800;
+	padding-right: 4px;
+	color: #1b262c;
+}
+
+.btnContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btnContainer a {
+	text-align: center;
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px 15px;
+	background-color: #0f4c75;
+	color: #bbe1fa;
+	border: 2px solid #1b262c;
+	font-family: 'Rubik', sans-serif;
+	font-size: 1rem;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.btnContainer a:hover {
+	background-color: #1b262c;
+}
