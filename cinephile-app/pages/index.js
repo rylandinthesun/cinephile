@@ -19,8 +19,8 @@ export default function Home () {
 						Cine<span>Phile</span>
 					</h1>
 					<p className={homeStyles.description}>
-						A social app for film fans that lets you rate and review movies while also tracking movies
-						you've watched or want to watch. Explore what others are watching, rating & reviewing.
+						An app for film fans that lets you rate and review movies while also tracking movies you've
+						watched or want to watch.
 					</p>
 					{user && (
 						<div className={homeStyles.hello}>

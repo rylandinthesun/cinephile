@@ -1,5 +1,4 @@
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-import firebaseClient from '../firebase/firebaseClient';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import joinStyles from '../styles/Join.module.css';

@@ -1,25 +1,18 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import 'firebase/firestore';
 import nookies from 'nookies';
 import { verifyIdToken } from '../firebase/firebaseAdmin';
 import { FaStar, FaSearch } from 'react-icons/fa';
 import { AiFillEye } from 'react-icons/ai';
-import { useAuth } from '../firebase/auth';
 import { useEffect, useState } from 'react';
-import ReviewList from '../components/ReviewList';
 import homeStyles from '../styles/Home.module.css';
 import DBMovieList from '../components/DBMovieList';
 
 const dashboard = ({ token }) => {
-	const { user } = useAuth();
 	const db = firebase.firestore();
 
-	const [
-		name,
-		setName
-	] = useState('');
 	const [
 		photo,
 		setPhoto
@@ -43,16 +36,6 @@ const dashboard = ({ token }) => {
 			});
 	};
 
-	const getName = () => {
-		if (!token.name) {
-			const name = user.displayName;
-			setName(name);
-		}
-		else {
-			setName(token.name);
-		}
-	};
-
 	const getPhoto = () => {
 		if (!token.picture) {
 			const pic =
@@ -64,9 +47,19 @@ const dashboard = ({ token }) => {
 		}
 	};
 
+	const getUsers = async () => {
+		await db.collection('users').get().then((querySnapshot) => {
+			querySnapshot.forEach((userDoc) => {
+				console.log(userDoc.id);
+
+				let userDocData = userDoc.data();
+				console.log(userDocData);
+			});
+		});
+	};
+
 	useEffect(() => {
 		if (token) {
-			getName();
 			getPhoto();
 			getSeenMovies();
 		}
@@ -75,13 +68,13 @@ const dashboard = ({ token }) => {
 	return (
 		<div>
 			<Head>
-				<title>{name}'s Dashboard</title>
+				<title>Dashboard</title>
 			</Head>
 			{token && (
 				<div>
 					<div className={homeStyles.heading}>
 						<img src={photo} alt="profile avatar" />
-						<div>{name}'s Dashboard</div>
+						<div>My Dashboard</div>
 					</div>
 
 					<div className={homeStyles.categories}>

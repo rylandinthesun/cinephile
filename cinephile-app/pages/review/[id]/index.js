@@ -5,7 +5,7 @@ import API_KEY from '../../../API_KEY';
 import { useAuth } from '../../../firebase/auth';
 import { FaStar } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import reviewStyles from '../../../styles/Review.module.css';
@@ -94,7 +94,6 @@ const review = ({ movie }) => {
 		else {
 			console.log('Must be user to add a review.');
 		}
-		// router.push(`/movie/${movie.imdbID}`);
 	};
 
 	const removeReview = () => {
@@ -126,8 +125,6 @@ const review = ({ movie }) => {
 			getReview();
 		}
 	}, []);
-
-	console.log(review);
 
 	return (
 		<div>

@@ -40,7 +40,7 @@ const reviews = ({ token }) => {
 	return (
 		<div>
 			<Head>
-				<title>{token.name}'s Reviews</title>
+				<title>My Reviews</title>
 			</Head>
 			{!uid && (
 				<div className={reviewStyles.container}>

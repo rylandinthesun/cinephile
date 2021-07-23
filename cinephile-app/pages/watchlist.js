@@ -40,7 +40,7 @@ const watchlist = ({ token }) => {
 	return (
 		<div>
 			<Head>
-				<title>{token.name}'s Watch List</title>
+				<title>My Watch List</title>
 			</Head>
 			{!token && (
 				<div className={watchStyles.container}>
