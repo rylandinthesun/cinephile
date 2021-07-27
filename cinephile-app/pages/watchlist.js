@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import nookies from 'nookies';
 import { verifyIdToken } from '../firebase/firebaseAdmin';
 import firebase from 'firebase';

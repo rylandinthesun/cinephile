@@ -7,9 +7,9 @@ import { FaStar } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-import { useEffect, useState } from 'react';
-import reviewStyles from '../../../styles/Review.module.css';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/dist/client/router';
+import reviewStyles from '../../../styles/Review.module.css';
 
 const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
 

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import nookies from 'nookies';
 import { verifyIdToken } from '../firebase/firebaseAdmin';
 import { useAuth } from '../firebase/auth';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import profileStyles from '../styles/Profile.module.css';
 
 const account = ({ token }) => {

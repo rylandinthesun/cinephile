@@ -6,9 +6,9 @@ import nookies from 'nookies';
 import { verifyIdToken } from '../firebase/firebaseAdmin';
 import { FaStar, FaSearch } from 'react-icons/fa';
 import { AiFillEye } from 'react-icons/ai';
-import { useEffect, useState } from 'react';
-import homeStyles from '../styles/Home.module.css';
+import React, { useEffect, useState } from 'react';
 import DBMovieList from '../components/DBMovieList';
+import homeStyles from '../styles/Home.module.css';
 
 const dashboard = ({ token }) => {
 	const db = firebase.firestore();
@@ -47,16 +47,16 @@ const dashboard = ({ token }) => {
 		}
 	};
 
-	const getUsers = async () => {
-		await db.collection('users').get().then((querySnapshot) => {
-			querySnapshot.forEach((userDoc) => {
-				console.log(userDoc.id);
+	// const getUsers = async () => {
+	// 	await db.collection('users').get().then((querySnapshot) => {
+	// 		querySnapshot.forEach((userDoc) => {
+	// 			console.log(userDoc.id);
 
-				let userDocData = userDoc.data();
-				console.log(userDocData);
-			});
-		});
-	};
+	// 			let userDocData = userDoc.data();
+	// 			console.log(userDocData);
+	// 		});
+	// 	});
+	// };
 
 	useEffect(() => {
 		if (token) {

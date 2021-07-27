@@ -1,3 +1,4 @@
+import React from 'react';
 import Layout from '../components/Layout';
 import { AuthProvider } from '../firebase/auth';
 import '../styles/globals.css';

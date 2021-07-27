@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import movieCardStyles from '../styles/MovieCard.module.css';
 
@@ -8,11 +9,11 @@ const MovieCard = ({ title, img, year, id }) => {
 				{img == 'N/A' ? (
 					<img
 						src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/832px-No-Image-Placeholder.svg.png"
-						alt="Movie Poster"
+						alt={title}
 						loading="lazy"
 					/>
 				) : (
-					<img src={img} alt="Movie Poster" loading="lazy" />
+					<img src={img} alt={title} loading="lazy" />
 				)}
 
 				<div className={movieCardStyles.title}>

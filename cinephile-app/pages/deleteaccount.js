@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import firebase from 'firebase';
+import React from 'react';
 import 'firebase/firestore';
 import { useAuth } from '../firebase/auth';
 import Link from 'next/link';
-import { useRouter } from 'next/dist/client/router';
+import { useRouter } from 'next/router';
 import deleteStyles from '../styles/Delete.module.css';
 
 const deleteaccount = () => {

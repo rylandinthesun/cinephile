@@ -1,5 +1,5 @@
+import React from 'react';
 import MovieCard from '../components/MovieCard';
-
 import movieListStyles from '../styles/MovieList.module.css';
 
 const MovieList = ({ movies }) => {

@@ -1,3 +1,4 @@
+import React from 'react';
 import searchFormStyles from '../styles/SearchForm.module.css';
 
 const SearchForm = ({ value, setSearchValue }) => {

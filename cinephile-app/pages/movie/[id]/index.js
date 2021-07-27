@@ -1,11 +1,12 @@
 import axios from 'axios';
+import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import LargeMovieCard from '../../../components/LargeMovieCard';
 import API_KEY from '../../../API_KEY';
 import { IoIosArrowBack } from 'react-icons/io';
-import moviePageStyles from '../../../styles/MoviePage.module.css';
 import { useAuth } from '../../../firebase/auth';
+import moviePageStyles from '../../../styles/MoviePage.module.css';
 
 const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
 
@@ -24,6 +25,7 @@ export async function getServerSideProps ({ query }) {
 
 const movie = ({ movie }) => {
 	const { user } = useAuth();
+	console.log(movie);
 
 	return (
 		<div>

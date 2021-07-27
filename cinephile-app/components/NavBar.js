@@ -1,5 +1,5 @@
+import React, { useState } from 'react';
 import Link from 'next/link';
-import React from 'react';
 import { useRouter } from 'next/router';
 import { RiFilmFill } from 'react-icons/ri';
 import { BsCollectionFill } from 'react-icons/bs';
@@ -8,9 +8,8 @@ import { FiMenu } from 'react-icons/fi';
 import { RiCloseFill } from 'react-icons/ri';
 import { RiSettings5Fill } from 'react-icons/ri';
 import firebase from 'firebase/app';
-import navStyles from '../styles/NavBar.module.css';
 import { useAuth } from '../firebase/auth';
-import { useState } from 'react';
+import navStyles from '../styles/NavBar.module.css';
 
 const NavLink = ({ href, name, icon }) => {
 	return (

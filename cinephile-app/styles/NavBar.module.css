@@ -112,6 +112,7 @@
 
 .navBtn svg {
 	margin-right: 10px;
+	transform: rotate(90deg);
 }
 
 .navBtn a:hover {

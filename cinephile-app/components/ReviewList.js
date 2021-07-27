@@ -1,5 +1,5 @@
+import React from 'react';
 import ReviewCard from '../components/ReviewCard';
-
 import reviewListStyles from '../styles/ReviewList.module.css';
 
 const ReviewList = ({ movies }) => {

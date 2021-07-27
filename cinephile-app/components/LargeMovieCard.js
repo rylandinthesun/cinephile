@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaImdb } from 'react-icons/fa';
 import { AiOutlineEye, AiFillEye } from 'react-icons/ai';
 import { FaCheckCircle, FaRegCheckCircle } from 'react-icons/fa';
@@ -138,10 +139,10 @@ const LargeMovieCard = ({ movie }) => {
 					{movie.Poster == 'N/A' ? (
 						<img
 							src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/832px-No-Image-Placeholder.svg.png"
-							alt="Movie Poster"
+							alt={movie.Title}
 						/>
 					) : (
-						<img src={movie.Poster} alt="Movie Poster" loading="lazy" />
+						<img src={movie.Poster} alt={movie.Title} loading="lazy" />
 					)}
 				</div>
 				<div className={largeCardStyles.titleInfo}>

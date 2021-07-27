@@ -1,8 +1,9 @@
+import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Footer from '../components/Footer';
-import homeStyles from '../styles/Home.module.css';
 import { useAuth } from '../firebase/auth';
+import homeStyles from '../styles/Home.module.css';
 
 export default function Home () {
 	const { user } = useAuth();
