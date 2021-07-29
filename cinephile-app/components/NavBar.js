@@ -66,6 +66,10 @@ const NavBar = () => {
 						</div>
 
 						<div onClick={() => setOpen(!open)} className={navStyles.navBtn}>
+							<NavLink href="/search" name="Search" icon={<FaSearch />} />
+						</div>
+
+						<div onClick={() => setOpen(!open)} className={navStyles.navBtn}>
 							<NavLink href="/account" name="Account" icon={<RiSettings5Fill />} />
 						</div>
 

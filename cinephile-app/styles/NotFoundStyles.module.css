@@ -1,0 +1,37 @@
+.notFound {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.notFound h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	font-size: 1.8rem;
+	color: #0f4c75;
+	margin: 0;
+}
+
+.notFound h2 span {
+	color: #1b262c;
+	font-style: italic;
+}
+
+.notFound p {
+	font-family: 'Rubik', sans-serif;
+	margin: 0;
+	margin-top: 4px;
+	color: #3282b8;
+}
+
+.notFound p a {
+	color: #0f4c75;
+	text-decoration: underline;
+	transition: 0.2s;
+}
+
+.notFound p a:hover {
+	color: #1b262c;
+}
