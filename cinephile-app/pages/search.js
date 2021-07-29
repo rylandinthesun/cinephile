@@ -46,7 +46,7 @@ const Search = () => {
 	return (
 		<div>
 			<Head>
-				<title>Results for "{searchValue}"</title>
+				<title>Results for &quot;{searchValue}&quot;</title>
 			</Head>
 			<div className={searchPageStyles.searchForm}>
 				<SearchForm searchValue={searchValue} setSearchValue={setSearchValue} />

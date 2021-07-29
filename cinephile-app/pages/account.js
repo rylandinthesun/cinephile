@@ -49,12 +49,12 @@ const Account = ({ token }) => {
 	return (
 		<div>
 			<Head>
-				<title>{name}'s Account</title>
+				<title>{name}&apos;s Account</title>
 			</Head>
 			{token && (
 				<div>
 					<div className={profileStyles.heading}>
-						<div>{name}'s Account</div>
+						<div>{name}&apos;s Account</div>
 					</div>
 
 					<div className={profileStyles.container}>

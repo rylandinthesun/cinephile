@@ -169,7 +169,7 @@ const Review = ({ movie }) => {
 										</div>
 									</div>
 								</div>
-								<p>"{review.review}"</p>
+								<p>&quot;{review.review}&quot;</p>
 								<button onClick={() => removeReview()}>Delete Review</button>
 							</div>
 						)}

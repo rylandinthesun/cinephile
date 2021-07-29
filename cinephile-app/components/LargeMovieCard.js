@@ -153,6 +153,7 @@ const LargeMovieCard = ({ movie }) => {
 								className={largeCardStyles.imdb}
 								href={`https://imdb.com/title/${movie.imdbID}`}
 								target="_blank"
+								rel="noreferrer"
 							>
 								<FaImdb />
 							</a>
@@ -176,7 +177,7 @@ const LargeMovieCard = ({ movie }) => {
 				</div>
 			</div>
 			<div className={largeCardStyles.plot}>
-				<div>"{movie.Plot}"</div>
+				<div>&quot;{movie.Plot}&quot;</div>
 			</div>
 			<div className={largeCardStyles.creditSection}>
 				<div className={largeCardStyles.creditTitle}>Director:</div>

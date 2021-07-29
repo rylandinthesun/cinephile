@@ -24,9 +24,9 @@ const ReviewCard = ({ img, id, title, rating, review }) => {
 						{title.length > 14 ? <h3>{title.slice(0, 14)}...</h3> : <h3>{title}</h3>}
 
 						{review.length > 80 ? (
-							<p role="heading">"{review.slice(0, 80)}..."</p>
+							<p role="heading">&quot;{review.slice(0, 80)}...&quot;</p>
 						) : (
-							<p role="heading">"{review}"</p>
+							<p role="heading">&quot;{review}&quot;</p>
 						)}
 					</div>
 				</div>
