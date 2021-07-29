@@ -9,7 +9,7 @@ import searchPageStyles from '../styles/SearchPage.module.css';
 
 const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
 
-const search = () => {
+const Search = () => {
 	const [
 		movies,
 		setMovies
@@ -31,7 +31,12 @@ const search = () => {
 	};
 	useEffect(
 		() => {
-			getMovies();
+			if (searchValue) {
+				getMovies();
+			}
+			else {
+				setSearchValue('');
+			}
 		},
 		[
 			searchValue
@@ -48,15 +53,15 @@ const search = () => {
 			</div>
 
 			<div className={searchPageStyles.searchContainer}>
-				{movies ? (
+				{movies && (
 					<div>
 						<MovieList movies={movies} />
 					</div>
-				) : null}
+				)}
 			</div>
 			<Footer />
 		</div>
 	);
 };
 
-export default search;
+export default Search;

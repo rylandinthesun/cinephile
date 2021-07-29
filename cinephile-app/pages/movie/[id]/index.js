@@ -23,7 +23,7 @@ export async function getServerSideProps ({ query }) {
 	};
 }
 
-const movie = ({ movie }) => {
+const Movie = ({ movie }) => {
 	const { user } = useAuth();
 
 	return (
@@ -57,4 +57,4 @@ const movie = ({ movie }) => {
 	);
 };
 
-export default movie;
+export default Movie;
