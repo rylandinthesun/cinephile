@@ -47,17 +47,6 @@ const dashboard = ({ token }) => {
 		}
 	};
 
-	// const getUsers = async () => {
-	// 	await db.collection('users').get().then((querySnapshot) => {
-	// 		querySnapshot.forEach((userDoc) => {
-	// 			console.log(userDoc.id);
-
-	// 			let userDocData = userDoc.data();
-	// 			console.log(userDocData);
-	// 		});
-	// 	});
-	// };
-
 	useEffect(() => {
 		if (token) {
 			getPhoto();

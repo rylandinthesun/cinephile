@@ -133,7 +133,7 @@ const LargeMovieCard = ({ movie }) => {
 	}, []);
 
 	return (
-		<div key={movie.imdbID} className={largeCardStyles.movieCard}>
+		<div className={largeCardStyles.movieCard}>
 			<div className={largeCardStyles.title}>
 				<div>
 					{movie.Poster == 'N/A' ? (
@@ -164,7 +164,11 @@ const LargeMovieCard = ({ movie }) => {
 					</div>
 					<div className={largeCardStyles.genre}>
 						{movie.Genre ? (
-							movie.Genre.split(', ').map((g) => <div className={largeCardStyles.genreName}>{g}</div>)
+							movie.Genre.split(', ').map((g) => (
+								<div key={g} className={largeCardStyles.genreName}>
+									{g}
+								</div>
+							))
 						) : (
 							movie.Genre
 						)}

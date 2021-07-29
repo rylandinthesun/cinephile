@@ -9,6 +9,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/dist/client/router';
+import { v4 as uuid } from 'uuid';
 import reviewStyles from '../../../styles/Review.module.css';
 
 const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
@@ -163,7 +164,7 @@ const review = ({ movie }) => {
 										</Link>
 										<div className={reviewStyles.stars}>
 											{stars.map((i) => {
-												return <FaStar />;
+												return <FaStar key={uuid()} />;
 											})}
 										</div>
 									</div>

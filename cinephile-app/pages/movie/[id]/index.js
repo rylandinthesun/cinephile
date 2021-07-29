@@ -25,7 +25,6 @@ export async function getServerSideProps ({ query }) {
 
 const movie = ({ movie }) => {
 	const { user } = useAuth();
-	console.log(movie);
 
 	return (
 		<div>
@@ -51,7 +50,7 @@ const movie = ({ movie }) => {
 					</div>
 				</div>
 				<div className={moviePageStyles.cardContainer}>
-					{!movie ? <div>Loading...</div> : <LargeMovieCard key={movie.imdbID} movie={movie} />}
+					{!movie ? <div>Loading...</div> : <LargeMovieCard movie={movie} />}
 				</div>
 			</div>
 		</div>

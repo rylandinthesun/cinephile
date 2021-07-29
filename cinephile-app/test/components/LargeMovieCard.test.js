@@ -48,5 +48,6 @@ describe('LargeMovieCard', () => {
 		expect(year).toBeVisible();
 		expect(runtime).toBeVisible();
 		expect(actors).toBeVisible();
+		screen.debug();
 	});
 });

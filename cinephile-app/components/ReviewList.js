@@ -9,7 +9,7 @@ const ReviewList = ({ movies }) => {
 				<ReviewCard
 					img={m.movie_image}
 					id={m.imdb_id}
-					key={m.id}
+					key={m.imdb_id}
 					rating={m.rating}
 					review={m.review}
 					title={m.movie_title}

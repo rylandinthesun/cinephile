@@ -2,6 +2,7 @@ import React from 'react';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import { useAuth } from '../firebase/auth';
 import joinStyles from '../styles/Join.module.css';
 
 const uiConfig = {
@@ -13,11 +14,15 @@ const uiConfig = {
 };
 
 const SignInScreen = () => {
+	const { user } = useAuth();
+
 	return (
 		<div className={joinStyles.container}>
-			<div className={joinStyles.firebaseBtns}>
-				<StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
-			</div>
+			{!user ? (
+				<div className={joinStyles.firebaseBtns}>
+					<StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+				</div>
+			) : null}
 		</div>
 	);
 };

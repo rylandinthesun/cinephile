@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaStar } from 'react-icons/fa';
+import { v4 as uuid } from 'uuid';
 import reviewCardStyles from '../styles/ReviewCard.module.css';
 
 const ReviewCard = ({ img, id, title, rating, review }) => {
@@ -32,7 +33,7 @@ const ReviewCard = ({ img, id, title, rating, review }) => {
 				<div className={reviewCardStyles.rating} data-testid={rating}>
 					{stars.map((i) => {
 						return (
-							<div>
+							<div key={uuid()}>
 								<FaStar />
 							</div>
 						);
