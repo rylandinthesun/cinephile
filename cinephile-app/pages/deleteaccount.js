@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import deleteStyles from '../styles/Delete.module.css';
 
-const deleteaccount = () => {
+const DeleteAccount = () => {
 	const { user } = useAuth();
 	const router = useRouter();
 
@@ -48,4 +48,4 @@ const deleteaccount = () => {
 	);
 };
 
-export default deleteaccount;
+export default DeleteAccount;

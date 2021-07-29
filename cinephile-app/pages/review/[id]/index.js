@@ -27,7 +27,7 @@ export async function getServerSideProps ({ query }) {
 	};
 }
 
-const review = ({ movie }) => {
+const Review = ({ movie }) => {
 	const { user } = useAuth();
 	const db = firebase.firestore();
 	const router = useRouter();
@@ -205,4 +205,4 @@ const review = ({ movie }) => {
 	);
 };
 
-export default review;
+export default Review;

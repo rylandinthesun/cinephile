@@ -10,7 +10,7 @@ import React, { useEffect, useState } from 'react';
 import DBMovieList from '../components/DBMovieList';
 import homeStyles from '../styles/Home.module.css';
 
-const dashboard = ({ token }) => {
+const Dashboard = ({ token }) => {
 	const db = firebase.firestore();
 
 	const [
@@ -119,4 +119,4 @@ export async function getServerSideProps (context) {
 	}
 }
 
-export default dashboard;
+export default Dashboard;

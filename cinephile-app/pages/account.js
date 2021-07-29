@@ -6,7 +6,7 @@ import { useAuth } from '../firebase/auth';
 import React, { useEffect, useState } from 'react';
 import profileStyles from '../styles/Profile.module.css';
 
-const account = ({ token }) => {
+const Account = ({ token }) => {
 	const { user } = useAuth();
 
 	const [
@@ -95,4 +95,4 @@ export async function getServerSideProps (context) {
 	}
 }
 
-export default account;
+export default Account;

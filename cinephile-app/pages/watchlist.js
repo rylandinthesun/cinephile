@@ -9,7 +9,7 @@ import { IoIosArrowBack } from 'react-icons/io';
 import DBMovieList from '../components/DBMovieList';
 import watchStyles from '../styles/Reviews.module.css';
 
-const watchlist = ({ token }) => {
+const WatchList = ({ token }) => {
 	const db = firebase.firestore();
 	const { uid } = token;
 
@@ -93,4 +93,4 @@ export async function getServerSideProps (context) {
 	}
 }
 
-export default watchlist;
+export default WatchList;

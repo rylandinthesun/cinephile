@@ -9,7 +9,7 @@ import { IoIosArrowBack } from 'react-icons/io';
 import ReviewList from '../components/ReviewList';
 import reviewStyles from '../styles/Reviews.module.css';
 
-const reviews = ({ token }) => {
+const Reviews = ({ token }) => {
 	const db = firebase.firestore();
 	const { uid } = token;
 
@@ -93,4 +93,4 @@ export async function getServerSideProps (context) {
 	}
 }
 
-export default reviews;
+export default Reviews;
