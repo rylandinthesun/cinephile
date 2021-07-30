@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import movieCardStyles from '../styles/MovieCard.module.css';
 
 const MovieCard = ({ title, img, year, id }) => {
@@ -7,13 +8,23 @@ const MovieCard = ({ title, img, year, id }) => {
 		<Link href="/movie/[id]" as={`/movie/${id}`}>
 			<div className={movieCardStyles.movieCard}>
 				{img == 'N/A' ? (
-					<img
+					<Image
+						className={movieCardStyles.cardImage}
 						src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/832px-No-Image-Placeholder.svg.png"
 						alt={title}
-						loading="lazy"
+						height={250}
+						width={165}
+						layout="fixed"
 					/>
 				) : (
-					<img src={img} alt={title} loading="lazy" />
+					<Image
+						className={movieCardStyles.cardImage}
+						src={img}
+						alt={title}
+						height={250}
+						width={165}
+						layout="fixed"
+					/>
 				)}
 
 				<div className={movieCardStyles.title}>

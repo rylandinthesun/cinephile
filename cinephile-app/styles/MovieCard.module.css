@@ -2,7 +2,7 @@
 	flex: 0 0 wrap;
 	background-color: #bbe1fa;
 	margin-right: 20px;
-	padding: 16px 20px;
+	padding: 18px 20px;
 	border-radius: 5px;
 	border: 3px solid #0f4c75;
 	display: flex;
@@ -17,14 +17,11 @@
 	box-shadow: #bbe1fa -10px 10px 0px -3px, #0f4c75 -10px 10px;
 	background-color: #3282b8;
 	color: #bbe1fa;
-	margin-right: 2px;
+	margin-right: 4px;
 }
 
-.movieCard img {
-	height: 15rem;
-	width: 10rem;
+.cardImage {
 	border-radius: 2px;
-	object-fit: cover;
 }
 
 .title {

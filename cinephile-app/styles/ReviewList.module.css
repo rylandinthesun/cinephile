@@ -1,18 +1,11 @@
 .wrapper {
 	margin: 10px 0;
-	padding: 0 0.5rem;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 50% 50%;
-	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 0.5rem;
 	justify-content: space-evenly;
 	justify-items: center;
 	align-content: space-evenly;
 	align-items: center;
-}
-
-@media only screen and (max-width: 665px) {
-	.wrapper {
-		grid-template-columns: 100%;
-	}
 }

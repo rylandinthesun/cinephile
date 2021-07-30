@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import nookies from 'nookies';
@@ -62,8 +63,26 @@ const Dashboard = ({ token }) => {
 			{token && (
 				<div>
 					<div className={homeStyles.heading}>
-						<img src={photo} alt="profile avatar" />
-						<div>My Dashboard</div>
+						{token.picture ? (
+							<Image
+								className={homeStyles.cardImage}
+								src={token.picture}
+								alt="Avatar"
+								height={90}
+								width={90}
+								layout="fixed"
+							/>
+						) : (
+							<Image
+								className={homeStyles.cardImage}
+								src="https://st3.depositphotos.com/4111759/13425/v/600/depositphotos_134255626-stock-illustration-avatar-male-profile-gray-person.jpg"
+								alt="Avatar"
+								height={90}
+								width={90}
+								layout="fixed"
+							/>
+						)}
+						<h2>My Dashboard</h2>
 					</div>
 
 					<div className={homeStyles.categories}>

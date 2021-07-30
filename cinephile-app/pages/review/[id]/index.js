@@ -1,6 +1,7 @@
 import axios from 'axios';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import API_KEY from '../../../API_KEY';
 import { useAuth } from '../../../firebase/auth';
 import { FaStar } from 'react-icons/fa';
@@ -154,7 +155,23 @@ const Review = ({ movie }) => {
 						{review && (
 							<div className={reviewStyles.ratingCard}>
 								<div className={reviewStyles.imgStars}>
-									<img src={review.movie_image} />
+									{review.movie_image ? (
+										<Image
+											className={reviewStyles.cardImage}
+											src={review.movie_image}
+											alt={review.movie_title}
+											height={96}
+											width={64}
+										/>
+									) : (
+										<Image
+											className={reviewStyles.cardImage}
+											src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/832px-No-Image-Placeholder.svg.png"
+											alt={review.movie_title}
+											height={96}
+											width={64}
+										/>
+									)}
 									<div className={reviewStyles.title}>
 										<Link href={`/movie/${review.imdb_id}`}>
 											<a>
@@ -169,7 +186,8 @@ const Review = ({ movie }) => {
 										</div>
 									</div>
 								</div>
-								<p>&quot;{review.review}&quot;</p>
+								{review.review === '' ? null : <p>&quot;{review.review}&quot;</p>}
+
 								<button onClick={() => removeReview()}>Delete Review</button>
 							</div>
 						)}

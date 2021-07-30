@@ -13,12 +13,6 @@
 	box-shadow: #bbe1fa -10px 10px 0px -3px, #0f4c75 -10px 10px;
 }
 
-.title img {
-	height: 6rem;
-	width: 4rem;
-	object-fit: cover;
-}
-
 .nameImdb {
 	display: flex;
 	justify-content: space-between;

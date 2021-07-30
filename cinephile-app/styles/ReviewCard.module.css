@@ -5,8 +5,8 @@
 	border: 3px solid #0f4c75;
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 10px;
-	color: #3282b8;
+	padding: 10px 10px 6px 10px;
+	color: #0f4c75;
 	transition: all 0.2s;
 	cursor: pointer;
 	margin: 5px 5px;
@@ -15,39 +15,24 @@
 .movieCard:hover {
 	background-color: #0f4c75;
 	border-color: #1b262c;
-}
-
-.movieCard img {
-	height: 6rem;
-	width: 4rem;
-	object-fit: cover;
-}
-
-.imgTitle {
-	display: flex;
-	height: 6rem;
-	width: 95%;
-}
-
-.imgTitle div {
-	padding-left: 10px;
-}
-
-.imgTitle div h3 {
-	margin: 0;
-	font-family: 'Rubik', sans-serif;
-	color: #bbe1fa;
-	font-size: 1.1rem;
-	width: 80%;
-}
-
-.imgTitle div p {
-	margin: 0;
-	padding-top: 5px;
-	font-size: 0.8rem;
-	width: 100%;
-	font-family: 'Rubik', sans-serif;
 	color: #1b262c;
+}
+
+.clickTo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.review {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1rem;
+}
+
+.review svg {
+	margin: 0;
+	padding-top: 6px;
 }
 
 .rating {
@@ -56,5 +41,5 @@
 
 .rating div {
 	color: #bbe1fa;
-	font-size: 0.7rem;
+	font-size: 1rem;
 }
