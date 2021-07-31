@@ -37,20 +37,8 @@ const Dashboard = ({ token }) => {
 			});
 	};
 
-	const getPhoto = () => {
-		if (!token.picture) {
-			const pic =
-				'https://st3.depositphotos.com/4111759/13425/v/600/depositphotos_134255626-stock-illustration-avatar-male-profile-gray-person.jpg';
-			setPhoto(pic);
-		}
-		else {
-			setPhoto(token.picture);
-		}
-	};
-
 	useEffect(() => {
 		if (token) {
-			getPhoto();
 			getSeenMovies();
 		}
 	}, []);

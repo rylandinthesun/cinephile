@@ -1,14 +1,13 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-	apiKey            : 'AIzaSyCKGOW31iB9TWJHD5lnKnB6fe8XIV_hmzg',
-	authDomain        : 'cinephile-db.firebaseapp.com',
-	databaseURL       : 'https://cinephile-db.firebaseio.com',
-	projectId         : 'cinephile-db',
-	storageBucket     : 'cinephile-db.appspot.com',
-	messagingSenderId : '30740931964',
-	appId             : '1:30740931964:web:9a150a58b7f8b82f90f0f9',
-	measurementId     : 'G-80JHX9T3FP'
+	apiKey            : process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+	authDomain        : process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+	databaseURL       : process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL,
+	projectId         : process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+	storageBucket     : process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId : process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+	appId             : process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 };
 
 export default function firebaseClient () {

@@ -7,7 +7,7 @@ import SearchForm from '../components/SearchForm';
 import API_KEY from '../API_KEY';
 import searchPageStyles from '../styles/SearchPage.module.css';
 
-const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
+const API_URL = `https://www.omdbapi.com/?apikey=${process.env.OMDB_API_KEY}`;
 
 const Search = () => {
 	const [
