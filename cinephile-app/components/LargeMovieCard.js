@@ -5,7 +5,7 @@ import { AiOutlineEye, AiFillEye } from 'react-icons/ai';
 import { FaCheckCircle, FaRegCheckCircle } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import 'firebase/firestore';
 import { useAuth } from '../firebase/auth';
 import largeCardStyles from '../styles/LargeMovieCard.module.css';

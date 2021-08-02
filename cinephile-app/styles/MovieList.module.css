@@ -4,7 +4,7 @@
 	flex-wrap: nowrap;
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
-	padding: 20px 12px;
+	padding: 20px 12px 30px 12px;
 	margin-left: 15px;
 	scroll-behavior: smooth;
 }

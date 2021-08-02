@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 import nookies from 'nookies';
 import { verifyIdToken } from '../firebase/firebaseAdmin';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import 'firebase/firestore';
 import Link from 'next/link';
 import { IoIosArrowBack } from 'react-icons/io';
