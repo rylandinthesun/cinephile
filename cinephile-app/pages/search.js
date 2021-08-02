@@ -4,7 +4,6 @@ import Head from 'next/head';
 import Footer from '../components/Footer';
 import MovieList from '../components/MovieList';
 import SearchForm from '../components/SearchForm';
-import API_KEY from '../API_KEY';
 import searchPageStyles from '../styles/SearchPage.module.css';
 
 const API_URL = `https://www.omdbapi.com/?apikey=${process.env.OMDB_API_KEY}`;
