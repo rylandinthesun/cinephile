@@ -8,6 +8,7 @@ import { FiMenu } from 'react-icons/fi';
 import { RiCloseFill } from 'react-icons/ri';
 import { RiSettings5Fill } from 'react-icons/ri';
 import firebase from 'firebase/app';
+import 'firebase/auth';
 import { useAuth } from '../firebase/auth';
 import navStyles from '../styles/NavBar.module.css';
 
@@ -36,8 +37,8 @@ const NavBar = () => {
 
 	const { user } = useAuth();
 
-	const signOutUser = async () => {
-		await firebase.auth().signOut();
+	const signOutUser = () => {
+		firebase.auth().signOut();
 		setOpen(false);
 		router.push('/');
 	};
