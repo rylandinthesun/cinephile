@@ -2,11 +2,11 @@
 
 ### Summary
 
-A simple web app to help keep track of movies you've watched or want to watch. As a user, you're able to rate and review movies you have watched. You will be able to interact with other users by being able to like and comment on their reviews.
+A simple web app to help keep track of movies you've watched or want to watch. As a user, you're able to rate and review movies you have watched.
 
 ### Tech & API
 
-I will be using Next.js and MongoDB for this project. The API will be using is the [OMDB](https://www.omdbapi.com/) API.
+I will be using Next.js and Firebase for this project. The API will be using is the [OMDB](https://www.omdbapi.com/) API.
 
 ### Schema
 
@@ -19,9 +19,8 @@ Also another table for movies connecting the users containing movie id/data, rat
 * Once logged in a user will be able to view/edit their user info.
 * A user can search for movies where they can mark each specific movie as "watched" or "want to watch" which watched and rated movies will be added to their specific user page.
 * A user is also able to rate and review a specific movie is they have "watched" it.
-* Users are also able to view other users pages where they are able to display movies they've watched, rated, and reviewed.
-* Users can like and comment on their own and other users reviews.
 
 ### Stretch Goals
 
-Possibly making a mobile version of the app.
+* Possibly making a mobile version of the app.
+* Add social features so users can interact and view other users data.
