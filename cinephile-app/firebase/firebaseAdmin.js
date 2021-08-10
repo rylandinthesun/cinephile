@@ -1,10 +1,12 @@
 import admin from 'firebase-admin';
-const serviceAccount = require('./serviceAccountKey.json');
+// const serviceAccount = require('./serviceAccountKey.json');
+
+const google_credentials = JSON.parse(Buffer.from(process.env.GCLOUD_CREDENTIALS, 'base64').toString());
 
 export const verifyIdToken = (token) => {
 	if (!admin.apps.length) {
 		admin.initializeApp({
-			credential  : admin.credential.cert(serviceAccount),
+			credential  : admin.credential.cert(google_credentials),
 			databaseURL : 'https://cinephile-db.firebaseio.com'
 		});
 	}
