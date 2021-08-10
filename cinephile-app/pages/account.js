@@ -9,7 +9,7 @@ const Account = ({ token }) => {
 	return (
 		<div>
 			<Head>
-				<title>{name}&apos;s Account</title>
+				<title>{token.name}&apos;s Account</title>
 			</Head>
 			{token && (
 				<div>
