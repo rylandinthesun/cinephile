@@ -4,15 +4,15 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import joinStyles from '../styles/Join.module.css';
 
-const uiConfig = {
-	signInOptions    : [
-		firebase.auth.EmailAuthProvider.PROVIDER_ID,
-		firebase.auth.GoogleAuthProvider.PROVIDER_ID
-	],
-	signInSuccessUrl : '/'
-};
-
 const SignIn = () => {
+	const uiConfig = {
+		signInOptions    : [
+			firebase.auth.EmailAuthProvider.PROVIDER_ID,
+			firebase.auth.GoogleAuthProvider.PROVIDER_ID
+		],
+		signInSuccessUrl : '/'
+	};
+
 	return (
 		<div className={joinStyles.container}>
 			<div className={joinStyles.firebaseBtns}>
