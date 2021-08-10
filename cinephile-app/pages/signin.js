@@ -13,7 +13,7 @@ const uiConfig = {
 	signInSuccessUrl : '/'
 };
 
-const SignInScreen = () => {
+const SignIn = () => {
 	const { user } = useAuth();
 
 	return (
@@ -27,4 +27,4 @@ const SignInScreen = () => {
 	);
 };
 
-export default SignInScreen;
+export default SignIn;
