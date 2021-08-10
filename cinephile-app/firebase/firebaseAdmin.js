@@ -1,5 +1,4 @@
 import admin from 'firebase-admin';
-// const serviceAccount = require('./serviceAccountKey.json');
 
 const google_credentials = JSON.parse(Buffer.from(process.env.GCLOUD_CREDENTIALS, 'base64').toString());
 
