@@ -1,6 +1,6 @@
 import admin from 'firebase-admin';
 
-const { google_credentials } = JSON.parse(Buffer.from(process.env.GCLOUD_CREDENTIALS, 'base64'));
+const google_credentials = JSON.parse(Buffer.from(process.env.GCLOUD_CREDENTIALS, 'base64'));
 
 export const verifyIdToken = (token) => {
 	if (!admin.apps.length) {
