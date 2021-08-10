@@ -15,11 +15,6 @@ const Dashboard = ({ token }) => {
 	const db = firebase.firestore();
 
 	const [
-		photo,
-		setPhoto
-	] = useState('');
-
-	const [
 		seenMovies,
 		setSeenMovies
 	] = useState([]);
