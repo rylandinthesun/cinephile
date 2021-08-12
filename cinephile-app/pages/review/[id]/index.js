@@ -12,7 +12,7 @@ import { useRouter } from 'next/dist/client/router';
 import { v4 as uuid } from 'uuid';
 import reviewStyles from '../../../styles/Review.module.css';
 
-const API_URL = `https://www.omdbapi.com/?apikey=${process.env.OMDB_API_KEY}`;
+const API_URL = `https://www.omdbapi.com/?apikey=${process.env.NEXT_OMDB_API_KEY}`;
 
 export async function getServerSideProps ({ query }) {
 	const { id } = query;

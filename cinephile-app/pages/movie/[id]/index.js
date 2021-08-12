@@ -7,7 +7,7 @@ import { IoIosArrowBack } from 'react-icons/io';
 import { useAuth } from '../../../firebase/auth';
 import moviePageStyles from '../../../styles/MoviePage.module.css';
 
-const API_URL = `https://www.omdbapi.com/?apikey=${process.env.OMDB_API_KEY}`;
+const API_URL = `https://www.omdbapi.com/?apikey=${process.env.NEXT_OMDB_API_KEY}`;
 
 export async function getServerSideProps ({ query }) {
 	const { id } = query;

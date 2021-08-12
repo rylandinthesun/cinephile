@@ -6,7 +6,7 @@ import MovieList from '../components/MovieList';
 import SearchForm from '../components/SearchForm';
 import searchPageStyles from '../styles/SearchPage.module.css';
 
-const API_URL = `https://www.omdbapi.com/?apikey=${process.env.OMDB_API_KEY}`;
+const API_URL = `https://www.omdbapi.com/?apikey=${process.env.NEXT_OMDB_API_KEY}`;
 
 const Search = () => {
 	const [
