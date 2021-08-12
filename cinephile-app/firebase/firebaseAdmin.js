@@ -6,6 +6,7 @@ export const verifyIdToken = (token) => {
 	const buff = Buffer(process.env.GCLOUD_CREDENTIALS, 'base64');
 	const gcp = buff.toString('ascii');
 	const google_credentials = JSON.parse(gcp);
+	console.log({ google_credentials });
 
 	if (!admin.apps.length) {
 		admin.initializeApp({
