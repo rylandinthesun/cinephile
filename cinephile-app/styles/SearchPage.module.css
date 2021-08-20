@@ -4,21 +4,13 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	margin-top: 25px;
+	margin-top: 14vh;
 	overflow-y: auto;
-	height: 60vh;
+	height: 100%;
 }
 
 .searchContainer::-webkit-scrollbar {
 	display: none;
-}
-
-.moreBtnContainer {
-	display: flex;
-	justify-content: center;
-	left: 50%;
-	right: 50%;
-	position: fixed;
 }
 
 .searchForm {

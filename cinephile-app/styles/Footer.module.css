@@ -3,11 +3,11 @@
 	bottom: 0;
 	width: 100%;
 	background-color: #0f4c75;
-	height: 30px;
+	height: 4vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 0.6rem;
+	font-size: 0.8rem;
 	font-family: 'Rubik', sans-serif;
 	color: #bbe1fa;
 }
