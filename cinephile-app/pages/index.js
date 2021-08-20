@@ -39,8 +39,15 @@ export default function Home () {
 							</Link>
 						)}
 					</div>
+					{!user && (
+						<p className={homeStyles.createdBy}>
+							Created by{' '}
+							<a href="https://www.rylandoehlers.com" target="_blank" rel="noreferrer">
+								Ryland Oehlers
+							</a>
+						</p>
+					)}
 				</div>
-				<Footer />
 			</div>
 		</div>
 	);

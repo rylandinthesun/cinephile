@@ -10,7 +10,7 @@
 
 .title {
 	font-family: 'Playfair Display', serif;
-	font-size: 4.6rem;
+	font-size: 5rem;
 	color: #0f4c75;
 	font-weight: 900;
 	letter-spacing: -2px;
@@ -68,6 +68,23 @@
 	font-family: 'Rubik', sans-serif;
 	font-weight: 800;
 	font-style: normal;
+}
+
+.createdBy {
+	font-family: 'Playfair Display', serif;
+	font-weight: 500;
+	color: #1b262c;
+	margin-top: 2rem;
+}
+
+.createdBy a {
+	font-family: 'Rubik', sans-serif;
+	color: #3282b8;
+	transition: 0.2s;
+}
+
+.createdBy a:hover {
+	color: #0f4c75;
 }
 
 .heading {
@@ -204,6 +221,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+	.title {
+		font-size: 4rem;
+	}
+
 	.favorites span {
 		display: none;
 	}
