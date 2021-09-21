@@ -1,21 +1,19 @@
 .movieCard {
-	background-color: #3282b8;
+	background-color: #0f4c75;
 	width: 100%;
 	border-radius: 5px;
-	border: 3px solid #0f4c75;
+	border: 3px solid #3282b8;
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 10px 6px 10px;
-	color: #0f4c75;
+	color: #3282b8;
 	transition: all 0.2s;
 	cursor: pointer;
 	margin: 5px 5px;
 }
 
 .movieCard:hover {
-	background-color: #0f4c75;
-	border-color: #1b262c;
-	color: #1b262c;
+	border-color: #bbe1fa;
 }
 
 .clickTo {
