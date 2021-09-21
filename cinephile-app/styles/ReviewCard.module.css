@@ -7,9 +7,10 @@
 	justify-content: space-between;
 	padding: 10px 10px 6px 10px;
 	color: #3282b8;
-	transition: all 0.2s;
+	transition: all 150ms;
 	cursor: pointer;
 	margin: 5px 5px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 .movieCard:hover {
