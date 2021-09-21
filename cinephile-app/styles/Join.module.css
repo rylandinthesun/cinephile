@@ -7,11 +7,3 @@
 	align-items: center;
 	height: 100vh;
 }
-
-.firebaseBtns {
-	border: 3px solid #0f4c75;
-	background-color: #3282b8;
-	padding: 18px 10px;
-	border-radius: 5px;
-	box-shadow: #bbe1fa -10px 10px 0px -3px, #0f4c75 -10px 10px;
-}

@@ -10,12 +10,12 @@
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
 	font-size: 1.8rem;
-	color: #0f4c75;
+	color: #bbe1fa;
 	margin: 0;
 }
 
 .notFound h2 span {
-	color: #1b262c;
+	color: #3282b8;
 	font-style: italic;
 }
 
@@ -27,11 +27,11 @@
 }
 
 .notFound p a {
-	color: #0f4c75;
+	color: #bbe1fa;
 	text-decoration: underline;
 	transition: 0.2s;
 }
 
 .notFound p a:hover {
-	color: #1b262c;
+	color: #3282b8;
 }

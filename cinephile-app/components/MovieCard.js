@@ -12,18 +12,20 @@ const MovieCard = ({ title, img, year, id }) => {
 						className={movieCardStyles.cardImage}
 						src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/832px-No-Image-Placeholder.svg.png"
 						alt={title}
-						height={250}
-						width={165}
+						height={300}
+						width={200}
 						layout="fixed"
+						objectFit="cover"
 					/>
 				) : (
 					<Image
 						className={movieCardStyles.cardImage}
 						src={img}
 						alt={title}
-						height={250}
-						width={165}
+						height={300}
+						width={200}
 						layout="fixed"
+						objectFit="cover"
 					/>
 				)}
 
@@ -34,7 +36,7 @@ const MovieCard = ({ title, img, year, id }) => {
 						<div className={movieCardStyles.name}>{title}</div>
 					)}
 
-					<div className={movieCardStyles.year}>{year}</div>
+					<div className={movieCardStyles.year}>{year.slice(0, 5)}</div>
 				</div>
 			</div>
 		</Link>

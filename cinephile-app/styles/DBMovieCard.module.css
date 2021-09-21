@@ -1,17 +1,15 @@
 .movieCard {
-	background-color: #3282b8;
+	background-color: #0f4c75;
 	padding: 8px 8px 5px 8px;
 	border-radius: 5px;
-	border: 3px solid #0f4c75;
-	color: ##3282b8;
+	border: 3px solid #3282b8;
 	transition: all 0.2s;
 	cursor: pointer;
 	margin: 10px 5px;
 }
 
 .movieCard:hover {
-	background-color: #0f4c75;
-	border: 3px solid #1b262c;
+	border: 3px solid #bbe1fa;
 }
 
 .cardImage {

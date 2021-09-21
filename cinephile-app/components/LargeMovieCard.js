@@ -142,18 +142,20 @@ const LargeMovieCard = ({ movie }) => {
 							className={largeCardStyles.cardImage}
 							src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/832px-No-Image-Placeholder.svg.png"
 							alt={movie.Title}
-							height={96}
-							width={64}
+							height={146}
+							width={104}
 							layout="fixed"
+							objectFit="cover"
 						/>
 					) : (
 						<Image
 							className={largeCardStyles.cardImage}
 							src={movie.Poster}
 							alt={movie.Title}
-							height={96}
-							width={64}
+							height={146}
+							width={104}
 							layout="fixed"
+							objectFit="cover"
 						/>
 					)}
 				</div>
